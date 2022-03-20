@@ -14,6 +14,7 @@
 		E32F234C27E765D100A4F71B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234B27E765D100A4F71B /* Response.swift */; };
 		E32F234E27E7672300A4F71B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234D27E7672300A4F71B /* Activities.swift */; };
 		E32F235027E7674100A4F71B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234F27E7674100A4F71B /* User.swift */; };
+		E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235127E7696700A4F71B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E32F234B27E765D100A4F71B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E32F234D27E7672300A4F71B /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		E32F234F27E7674100A4F71B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E32F235127E7696700A4F71B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E32F234627E747D500A4F71B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E32F235127E7696700A4F71B /* NetworkManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */,
 				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
 				E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */,
 				E32F234C27E765D100A4F71B /* Response.swift in Sources */,
