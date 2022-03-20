@@ -51,8 +51,11 @@
 		E32F233727E7474F00A4F71B /* Quapital iOS Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */,
-				E32F233A27E7474F00A4F71B /* ContentView.swift */,
+				E32F234A27E748A200A4F71B /* Model */,
+				E32F234927E7489800A4F71B /* View */,
+				E32F234827E7489300A4F71B /* ViewModel */,
+				E32F234727E747F500A4F71B /* App */,
+				E32F234627E747D500A4F71B /* Manager */,
 				E32F233C27E7475000A4F71B /* Assets.xcassets */,
 				E32F233E27E7475000A4F71B /* Preview Content */,
 			);
@@ -65,6 +68,43 @@
 				E32F233F27E7475000A4F71B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E32F234627E747D500A4F71B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E32F234727E747F500A4F71B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */,
+				E32F233A27E7474F00A4F71B /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E32F234827E7489300A4F71B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E32F234927E7489800A4F71B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E32F234A27E748A200A4F71B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
