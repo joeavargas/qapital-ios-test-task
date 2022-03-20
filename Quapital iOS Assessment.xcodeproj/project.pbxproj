@@ -11,6 +11,9 @@
 		E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F233A27E7474F00A4F71B /* ContentView.swift */; };
 		E32F233D27E7475000A4F71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32F233C27E7475000A4F71B /* Assets.xcassets */; };
 		E32F234027E7475000A4F71B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32F233F27E7475000A4F71B /* Preview Assets.xcassets */; };
+		E32F234C27E765D100A4F71B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234B27E765D100A4F71B /* Response.swift */; };
+		E32F234E27E7672300A4F71B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234D27E7672300A4F71B /* Activities.swift */; };
+		E32F235027E7674100A4F71B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234F27E7674100A4F71B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E32F233A27E7474F00A4F71B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E32F233C27E7475000A4F71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32F233F27E7475000A4F71B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E32F234B27E765D100A4F71B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E32F234D27E7672300A4F71B /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		E32F234F27E7674100A4F71B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 		E32F234A27E748A200A4F71B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E32F234B27E765D100A4F71B /* Response.swift */,
+				E32F234D27E7672300A4F71B /* Activities.swift */,
+				E32F234F27E7674100A4F71B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
 				E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */,
+				E32F234C27E765D100A4F71B /* Response.swift in Sources */,
+				E32F235027E7674100A4F71B /* User.swift in Sources */,
 				E32F233927E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
