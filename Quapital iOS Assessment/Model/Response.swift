@@ -8,7 +8,7 @@
 import Foundation
 
 struct Response: Codable {
-    var oldest: Date
+//    var oldest: Date
     var activities: [Activities]
 }
 

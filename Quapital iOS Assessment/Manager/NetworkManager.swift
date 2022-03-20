@@ -8,7 +8,7 @@
 import Foundation
 
 typealias OnApiSuccess = (Response) -> Void
-typealias OnApiError = (String) -> Void
+typealias OnApiError = (Error) -> Void
 
 class NetworkManager {
     static let shared = NetworkManager()
@@ -20,34 +20,37 @@ class NetworkManager {
         let url = URL(string: BASE_URL)
         
         let task = session.dataTask(with: url!) { data, response, error in
-            
-            // Handle session error
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            // Ensure there is data and a server response
-            guard let data = data, let response = response as? HTTPURLResponse else {
-                print("DEBUG: Invalid data or response")
-                return
-            }
-            
-            // Handle server response code
-            do{
-                switch response.statusCode {
-                case 200:
-                    // parse successful result
-                    let activities = try JSONDecoder().decode(Response.self, from: data)
-                    onSuccess(activities)
-                    
-                default:
-                    // handle unsuccessful error(400s)
-                    onError(error!.localizedDescription)
+            DispatchQueue.main.async {
+                
+                // Handle session error
+                if let error = error {
+                    print(error)
+                    return
                 }
-            } catch {
-                print("DEBUG: \(error.localizedDescription)")
-                onError(error.localizedDescription)
+                
+                // Ensure there is data and a server response
+                guard let data = data, let response = response as? HTTPURLResponse else {
+                    print("DEBUG: Invalid data or response")
+                    return
+                }
+                
+                // Handle server response code
+                do{
+                    switch response.statusCode {
+                    case 200:
+                        // parse successful result
+                        let activities = try JSONDecoder().decode(Response.self, from: data)
+                        onSuccess(activities)
+                        
+                    default:
+                        // handle unsuccessful error(400s)
+                        onError(error!)
+                    }
+                } catch {
+    //                print("DEBUG: response code: ", response)
+                    print("DEBUG: \(error)")
+                    onError(error)
+                }
             }
             
             

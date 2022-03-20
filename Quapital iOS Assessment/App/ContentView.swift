@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(viewModel.activities) { activity in
+                Text(activity.message)
+            }
+            .onAppear(perform: viewModel.fetchActivities)
+        }
     }
 }
 

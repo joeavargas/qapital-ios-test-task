@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Activities: Codable {
-    var message: String
-    var amount: Double
-    var userId: Int
-    var timestamp: Date
+struct Activities: Codable, Identifiable {
+    let id = UUID()
+    let message: String
+    let amount: Double
+    let userId: Int
+//    let timestamp: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case id, message, amount, userId
+    }
 }
