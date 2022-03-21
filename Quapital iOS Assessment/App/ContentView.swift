@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(viewModel.activities) { activity in
-                Text(activity.message)
+                HTMLRenderingView(html: activity.message)
             }
             .onAppear(perform: viewModel.fetchActivities)
         }

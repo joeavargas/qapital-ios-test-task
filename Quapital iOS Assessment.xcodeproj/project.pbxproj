@@ -16,6 +16,7 @@
 		E32F235027E7674100A4F71B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234F27E7674100A4F71B /* User.swift */; };
 		E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235127E7696700A4F71B /* NetworkManager.swift */; };
 		E32F235A27E79C9300A4F71B /* ActivityFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235927E79C9300A4F71B /* ActivityFeedViewModel.swift */; };
+		E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E32F234F27E7674100A4F71B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E32F235127E7696700A4F71B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E32F235927E79C9300A4F71B /* ActivityFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedViewModel.swift; sourceTree = "<group>"; };
+		E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLRenderingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		E32F234927E7489800A4F71B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */,
 				E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */,
 				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
 				E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */,
