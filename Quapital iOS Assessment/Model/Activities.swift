@@ -12,9 +12,9 @@ struct Activities: Codable, Identifiable {
     let message: String
     let amount: Double
     let userId: Int
-//    let timestamp: Double
+    let timestamp: String
     
     enum CodingKeys: String, CodingKey {
-        case id, message, amount, userId
+        case id, message, amount, userId, timestamp
     }
 }
