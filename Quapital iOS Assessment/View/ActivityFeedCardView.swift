@@ -32,6 +32,10 @@ struct ActivityFeedCardView: View {
                 Text("$2.00")
             }//: HStack
             .padding()
+            
+            Divider()
+                .background(Color.gray)
+                .padding(.horizontal)
         }
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct Quapital_iOS_AssessmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ActivityFeedCardView(activities: activityData.first!)
         }
     }
 }
