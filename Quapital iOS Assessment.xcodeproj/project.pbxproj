@@ -19,6 +19,7 @@
 		E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */; };
 		E368914C27E8C5BD00209C66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914B27E8C5BD00209C66 /* Data.swift */; };
 		E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */; };
+		E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368915027EA440600209C66 /* ActivityFeedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLRenderingView.swift; sourceTree = "<group>"; };
 		E368914B27E8C5BD00209C66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedCardView.swift; sourceTree = "<group>"; };
+		E368915027EA440600209C66 /* ActivityFeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */,
 				E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */,
+				E368915027EA440600209C66 /* ActivityFeedListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
 				E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */,
 				E32F234C27E765D100A4F71B /* Response.swift in Sources */,
+				E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */,
 				E32F235A27E79C9300A4F71B /* ActivityFeedViewModel.swift in Sources */,
 				E32F235027E7674100A4F71B /* User.swift in Sources */,
 				E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */,
