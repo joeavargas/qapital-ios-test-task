@@ -12,7 +12,7 @@ struct Quapital_iOS_AssessmentApp: App {
     @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: viewModel)
+            HomeView(viewModel: viewModel)
         }
     }
 }

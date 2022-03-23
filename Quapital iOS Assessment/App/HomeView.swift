@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Quapital iOS Assessment
 //
-//  Created by Joe Vargas on 3/20/22.
+//  Created by Joe Vargas on 3/23/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some View {
         ActivityFeedListView(activities: viewModel.activities)
@@ -15,8 +15,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

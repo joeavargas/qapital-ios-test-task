@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E32F233927E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */; };
-		E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F233A27E7474F00A4F71B /* ContentView.swift */; };
 		E32F233D27E7475000A4F71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32F233C27E7475000A4F71B /* Assets.xcassets */; };
 		E32F234027E7475000A4F71B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32F233F27E7475000A4F71B /* Preview Assets.xcassets */; };
 		E32F234C27E765D100A4F71B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F234B27E765D100A4F71B /* Response.swift */; };
@@ -20,12 +19,12 @@
 		E368914C27E8C5BD00209C66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914B27E8C5BD00209C66 /* Data.swift */; };
 		E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */; };
 		E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368915027EA440600209C66 /* ActivityFeedListView.swift */; };
+		E368915327EB544B00209C66 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368915227EB544B00209C66 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E32F233527E7474F00A4F71B /* Quapital iOS Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quapital iOS Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quapital_iOS_AssessmentApp.swift; sourceTree = "<group>"; };
-		E32F233A27E7474F00A4F71B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E32F233C27E7475000A4F71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32F233F27E7475000A4F71B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E32F234B27E765D100A4F71B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		E368914B27E8C5BD00209C66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedCardView.swift; sourceTree = "<group>"; };
 		E368915027EA440600209C66 /* ActivityFeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedListView.swift; sourceTree = "<group>"; };
+		E368915227EB544B00209C66 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */,
-				E32F233A27E7474F00A4F71B /* ContentView.swift */,
+				E368915227EB544B00209C66 /* HomeView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -215,12 +215,12 @@
 				E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */,
 				E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */,
 				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
-				E32F233B27E7474F00A4F71B /* ContentView.swift in Sources */,
 				E32F234C27E765D100A4F71B /* Response.swift in Sources */,
 				E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */,
 				E32F235A27E79C9300A4F71B /* ActivityFeedViewModel.swift in Sources */,
 				E32F235027E7674100A4F71B /* User.swift in Sources */,
 				E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */,
+				E368915327EB544B00209C66 /* HomeView.swift in Sources */,
 				E368914C27E8C5BD00209C66 /* Data.swift in Sources */,
 				E32F233927E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift in Sources */,
 			);
