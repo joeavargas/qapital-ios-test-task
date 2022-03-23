@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Codable, Equatable {
     var userId: Int
     var displayName: String
     var avatarUrl: String
+    
+    init(userId: Int, displayName: String, avatarUrl: String) {
+        self.userId = userId
+        self.displayName = displayName
+        self.avatarUrl = avatarUrl
+    }
 }
