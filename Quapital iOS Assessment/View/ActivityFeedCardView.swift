@@ -32,7 +32,7 @@ struct ActivityFeedCardView: View {
                 .padding(.horizontal, 2)
                 Spacer()
                 // MARK: - Amount TextViews
-                Text("\(activities.amount)")
+                Text("\(activities.amount, specifier: "$%.2f")")
             }//: HStack
             .padding()
             
