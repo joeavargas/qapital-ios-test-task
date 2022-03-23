@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Quapital_iOS_AssessmentApp: App {
+    @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some Scene {
         WindowGroup {
-            ActivityFeedListView(activities: activityData)
+            ContentView(viewModel: viewModel)
         }
     }
 }

@@ -10,12 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some View {
-        NavigationView {
-            List(viewModel.activities) { activity in
-                HTMLRenderingView(html: activity.message)
-            }
+        ActivityFeedListView(activities: viewModel.activities)
             .onAppear(perform: viewModel.fetchActivities)
-        }
     }
 }
 
