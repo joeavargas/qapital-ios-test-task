@@ -41,6 +41,13 @@ struct ActivityFeedCardView: View {
                 .padding(.horizontal)
         }
     }
+    func returnAvatarImageString(activity: Activities, user: User) -> String {
+        var avatarUrlString = ""
+        if activity.userId == user.userId {
+            avatarUrlString = "http://qapital-ios-testtask.herokuapp.com/avatars/\(user.displayName.lowercased()).jpg"
+        }
+         return avatarUrlString
+    }
 }
 
 struct ActivityFeedCardView_Previews: PreviewProvider {
