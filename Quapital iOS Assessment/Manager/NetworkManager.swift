@@ -8,7 +8,7 @@
 import Foundation
 
 typealias OnApiResponseSuccess = (Response) -> Void
-typealias OnApiUserSuccess = (User) -> Void
+typealias OnApiUserSuccess = (String) -> Void
 typealias OnApiError = (Error) -> Void
 
 class NetworkManager {
@@ -81,7 +81,7 @@ class NetworkManager {
                     case 200:
                         // parse successful result
                         let users = try JSONDecoder().decode(User.self, from: data)
-                        onSuccess(users)
+                        onSuccess(users.displayName)
                         
                     default:
                         // handle unsuccessful error(400s)

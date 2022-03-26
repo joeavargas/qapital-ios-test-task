@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ActivityFeedCardView: View {
+    @ObservedObject var viewModel = ActivityFeedViewModel()
     var activities: Activities
     var body: some View {
         VStack(spacing: 15) {
             HStack {
                 // MARK: - Avatar Image
-                Image(systemName: "person")
+                Image(systemName: viewModel.returnAvatarImageString(id: activities.userId))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 50, height: 50)
@@ -40,13 +41,6 @@ struct ActivityFeedCardView: View {
                 .background(Color.gray)
                 .padding(.horizontal)
         }
-    }
-    func returnAvatarImageString(activity: Activities, user: User) -> String {
-        var avatarUrlString = ""
-        if activity.userId == user.userId {
-            avatarUrlString = "http://qapital-ios-testtask.herokuapp.com/avatars/\(user.displayName.lowercased()).jpg"
-        }
-         return avatarUrlString
     }
 }
 

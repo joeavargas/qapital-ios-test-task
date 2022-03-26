@@ -9,6 +9,7 @@ import Foundation
 
 final class ActivityFeedViewModel: ObservableObject {
     @Published var activities = [Activities]()
+
     
     func fetchActivities() {
         NetworkManager.shared.fetchActivities { response in
@@ -17,5 +18,15 @@ final class ActivityFeedViewModel: ObservableObject {
             print("DEBUG: \(error)")
         }
 
+    }
+    
+    func returnAvatarImageString(id: Int) -> String{
+        var avatarUrlString: String = ""
+        NetworkManager.shared.fetchUserBy(id) { displayName in
+           avatarUrlString = "http://qapital-ios-testtask.herokuapp.com/avatars/\(displayName.lowercased()).jpg"
+        } onError: { error in
+            print("DEBUG: \(error)")
+        }
+        return avatarUrlString
     }
 }
