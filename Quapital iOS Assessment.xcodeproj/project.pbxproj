@@ -17,6 +17,8 @@
 		E32F235A27E79C9300A4F71B /* ActivityFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235927E79C9300A4F71B /* ActivityFeedViewModel.swift */; };
 		E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */; };
 		E353013827EF50BD002C9FEB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E353013727EF50BD002C9FEB /* Kingfisher */; };
+		E353013D27F0CC8C002C9FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353013C27F0CC8C002C9FEB /* AppDelegate.swift */; };
+		E353013F27F0D4CB002C9FEB /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E353013E27F0D4CB002C9FEB /* Fonts */; };
 		E368914C27E8C5BD00209C66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914B27E8C5BD00209C66 /* Data.swift */; };
 		E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */; };
 		E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368915027EA440600209C66 /* ActivityFeedListView.swift */; };
@@ -34,6 +36,9 @@
 		E32F235127E7696700A4F71B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E32F235927E79C9300A4F71B /* ActivityFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedViewModel.swift; sourceTree = "<group>"; };
 		E32F235B27E7AE5200A4F71B /* HTMLRenderingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLRenderingView.swift; sourceTree = "<group>"; };
+		E353013B27F0CA75002C9FEB /* Quapital-iOS-Assessment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Quapital-iOS-Assessment-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E353013C27F0CC8C002C9FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E353013E27F0D4CB002C9FEB /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		E368914B27E8C5BD00209C66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedCardView.swift; sourceTree = "<group>"; };
 		E368915027EA440600209C66 /* ActivityFeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedListView.swift; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		E32F233727E7474F00A4F71B /* Quapital iOS Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				E353013B27F0CA75002C9FEB /* Quapital-iOS-Assessment-Info.plist */,
 				E32F234A27E748A200A4F71B /* Model */,
 				E32F234927E7489800A4F71B /* View */,
 				E32F234827E7489300A4F71B /* ViewModel */,
@@ -78,6 +84,7 @@
 				E32F234627E747D500A4F71B /* Manager */,
 				E32F233C27E7475000A4F71B /* Assets.xcassets */,
 				E32F233E27E7475000A4F71B /* Preview Content */,
+				E353013E27F0D4CB002C9FEB /* Fonts */,
 				E368914D27E8C5D400209C66 /* Data */,
 			);
 			path = "Quapital iOS Assessment";
@@ -104,6 +111,7 @@
 			children = (
 				E32F233827E7474F00A4F71B /* Quapital_iOS_AssessmentApp.swift */,
 				E368915227EB544B00209C66 /* HomeView.swift */,
+				E353013C27F0CC8C002C9FEB /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E353013F27F0D4CB002C9FEB /* Fonts in Resources */,
 				E32F234027E7475000A4F71B /* Preview Assets.xcassets in Resources */,
 				E32F233D27E7475000A4F71B /* Assets.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E353013D27F0CC8C002C9FEB /* AppDelegate.swift in Sources */,
 				E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */,
 				E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */,
 				E32F234E27E7672300A4F71B /* Activities.swift in Sources */,
@@ -362,6 +372,7 @@
 				DEVELOPMENT_TEAM = VAC49TM43D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quapital-iOS-Assessment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +402,7 @@
 				DEVELOPMENT_TEAM = VAC49TM43D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quapital-iOS-Assessment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

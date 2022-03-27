@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Quapital_iOS_AssessmentApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @ObservedObject var viewModel = ActivityFeedViewModel()
     var body: some Scene {
         WindowGroup {
