@@ -19,6 +19,7 @@
 		E353013827EF50BD002C9FEB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E353013727EF50BD002C9FEB /* Kingfisher */; };
 		E353013D27F0CC8C002C9FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353013C27F0CC8C002C9FEB /* AppDelegate.swift */; };
 		E353013F27F0D4CB002C9FEB /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E353013E27F0D4CB002C9FEB /* Fonts */; };
+		E353014127F0D974002C9FEB /* Documentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353014027F0D974002C9FEB /* Documentation.swift */; };
 		E368914C27E8C5BD00209C66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914B27E8C5BD00209C66 /* Data.swift */; };
 		E368914F27E8DFA800209C66 /* ActivityFeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */; };
 		E368915127EA440600209C66 /* ActivityFeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368915027EA440600209C66 /* ActivityFeedListView.swift */; };
@@ -39,6 +40,7 @@
 		E353013B27F0CA75002C9FEB /* Quapital-iOS-Assessment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Quapital-iOS-Assessment-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E353013C27F0CC8C002C9FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E353013E27F0D4CB002C9FEB /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		E353014027F0D974002C9FEB /* Documentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documentation.swift; sourceTree = "<group>"; };
 		E368914B27E8C5BD00209C66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E368914E27E8DFA800209C66 /* ActivityFeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedCardView.swift; sourceTree = "<group>"; };
 		E368915027EA440600209C66 /* ActivityFeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedListView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				E32F233E27E7475000A4F71B /* Preview Content */,
 				E353013E27F0D4CB002C9FEB /* Fonts */,
 				E368914D27E8C5D400209C66 /* Data */,
+				E353014027F0D974002C9FEB /* Documentation.swift */,
 			);
 			path = "Quapital iOS Assessment";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E353014127F0D974002C9FEB /* Documentation.swift in Sources */,
 				E353013D27F0CC8C002C9FEB /* AppDelegate.swift in Sources */,
 				E32F235C27E7AE5200A4F71B /* HTMLRenderingView.swift in Sources */,
 				E32F235227E7696700A4F71B /* NetworkManager.swift in Sources */,
