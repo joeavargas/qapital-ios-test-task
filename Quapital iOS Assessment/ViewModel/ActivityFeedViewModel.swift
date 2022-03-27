@@ -24,6 +24,7 @@ final class ActivityFeedViewModel: ObservableObject {
         var avatarUrlString: String = ""
         NetworkManager.shared.fetchUserBy(id) { displayName in
            avatarUrlString = "http://qapital-ios-testtask.herokuapp.com/avatars/\(displayName.lowercased()).jpg"
+            print("DEBUG: \(avatarUrlString)")
         } onError: { error in
             print("DEBUG: \(error)")
         }

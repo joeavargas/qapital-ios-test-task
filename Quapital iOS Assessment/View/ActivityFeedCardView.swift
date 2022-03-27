@@ -6,34 +6,39 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ActivityFeedCardView: View {
     @ObservedObject var viewModel = ActivityFeedViewModel()
-    var activities: Activities
+    var activities: Activities?
     var body: some View {
         VStack(spacing: 15) {
             HStack {
                 // MARK: - Avatar Image
-                Image(systemName: viewModel.returnAvatarImageString(id: activities.userId))
+                    let url = viewModel.returnAvatarImageString(id: activities!.userId)
+                    KFImage(URL(string: url))
                     .resizable()
-                    .scaledToFill()
                     .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                        
                 Spacer()
                 // MARK: - VStack | Message and Date TextViews
                 VStack(alignment: .leading) {
-                    Text(activities.message)
-                        .lineLimit(nil)
-                        .font(.system(size: 12))
-                    Text(activities.timestamp)
-                        .fontWeight(.medium)
-                        .font(.system(size: 10))
-                        .foregroundColor(.gray)
+                    if activities != nil {
+                        Text(activities!.message)
+                            .lineLimit(nil)
+                            .font(.system(size: 12))
+                        Text(activities!.timestamp)
+                            .fontWeight(.medium)
+                            .font(.system(size: 10))
+                            .foregroundColor(.gray)
+                    }
                 }
                 .padding(.horizontal, 2)
                 Spacer()
                 // MARK: - Amount TextViews
-                Text("\(activities.amount, specifier: "$%.2f")")
+                if activities != nil {
+                    Text("\(activities!.amount, specifier: "$%.2f")")
+                }
             }//: HStack
             .padding()
             
