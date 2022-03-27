@@ -15,6 +15,10 @@ struct ActivityFeedCardView: View {
         VStack(spacing: 15) {
             HStack {
                 // MARK: - Avatar Image
+                /* Unfortunately, with no valid images hosted in the backend, I was unable to query and display the profile images.
+                 
+                 The network call to query the images was successful based on the print statement in the ActivityFeedViewModel.swift file, line 27.
+                 */
                     let url = viewModel.returnAvatarImageString(id: activities!.userId)
                     KFImage(URL(string: url))
                     .resizable()
